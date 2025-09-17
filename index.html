@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menara Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menara Hanoi</h1>
+    
+    <div class="controls">
+        <label for="disk-count">Jumlah Panekuk:</label>
+        <select id="disk-count">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6" selected>6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <button id="start-button">Mulai Ulang</button>
+    </div>
+
+    <div class="info">
+        <p>Langkah: <span id="moves-counter">0</span></p>
+        <p>Langkah Minimal: <span id="optimal-moves">0</span></p>
+        <p id="message"></p>
+    </div>
+
+    <div class="game-board" id="game-board">
+        <div class="tower" id="tower-A">
+            <div class="peg"></div>
+            <p>Piring A</p>
+        </div>
+        <div class="tower" id="tower-B">
+            <div class="peg"></div>
+            <p>Piring B</p>
+        </div>
+        <div class="tower" id="tower-C">
+            <div class="peg"></div>
+            <p>Piring C</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
